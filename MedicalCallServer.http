@@ -1,0 +1,5 @@
+@MedicalCallServer_HostAddress = http://localhost:5285
+
+GET http://localhost:5285/api/MedicalAssistanceCalls
+
+GET {{MedicalCallServer_HostAddress}}/api/MedicalAssistanceCalls/1
