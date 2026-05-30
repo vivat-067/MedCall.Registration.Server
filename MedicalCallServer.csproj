@@ -4,6 +4,10 @@
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Company>$(ViVat)</Company>
+    <Authors>$(Vit Vatkov)</Authors>
+    <FileVersion>2026.5.530.1604</FileVersion>
+    <AssemblyVersion>2026.5.530.1604</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>

@@ -7,9 +7,13 @@
 // Vit Vatkov   vivat-067@mail.ru
 
 
+using MedicalCallServer.Helpers;
 using MedicalCallServer.Services;
 using Microsoft.OpenApi;
+using System.Text;
 
+
+Console.OutputEncoding = Encoding.UTF8;
 
 var exePath = Path.GetDirectoryName(Environment.ProcessPath) ?? AppContext.BaseDirectory;
 Directory.SetCurrentDirectory(exePath);
@@ -32,8 +36,14 @@ builder.Services.AddSwaggerGen(c =>
 
 var app = builder.Build();
 
-Console.WriteLine($" *Server: {app.Configuration["Urls"] ?? Environment.GetEnvironmentVariable("ASPNETCORE_URLS")}");
-Console.WriteLine($" **WorkDir: {Environment.CurrentDirectory}");
+Console.WriteLine($" МедВызов: регистрация заявок вызова СМП. Версия: {AppVersionInfo.GetMajorVersion()} ({AppVersionInfo.GetBuildVersion()})");
+Console.WriteLine("--------------------------------------------------");
+Console.WriteLine(" Демо-версия ПРОТОТИПА МЕДИЦИНСКОЙ ИС для hh.ru");
+Console.WriteLine();
+Console.WriteLine($" *Server:   {app.Configuration["Urls"] ?? Environment.GetEnvironmentVariable("ASPNETCORE_URLS")}");
+Console.WriteLine($" **WorkDir:  {Environment.CurrentDirectory}");
+Console.WriteLine($" **Platform: {AppVersionInfo.GetPlatformInfo()}");
+Console.WriteLine();
 
 //if (app.Environment.IsDevelopment())
 //{
