@@ -6,9 +6,14 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Company>$(ViVat)</Company>
     <Authors>$(Vit Vatkov)</Authors>
-    <FileVersion>2026.5.530.1604</FileVersion>
-    <AssemblyVersion>2026.5.530.1604</AssemblyVersion>
+    <FileVersion>2026.6.618.1905</FileVersion>
+    <AssemblyVersion>2026.6.618.1905</AssemblyVersion>
+    <ApplicationIcon>Assets\app-logo.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\app-logo.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.7" />
