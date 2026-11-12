@@ -6,8 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Company>$(ViVat)</Company>
     <Authors>$(Vit Vatkov)</Authors>
-    <FileVersion>2026.6.618.1905</FileVersion>
-    <AssemblyVersion>2026.6.618.1905</AssemblyVersion>
+    <FileVersion>2026.6.1112.1517</FileVersion>
+    <AssemblyVersion>2026.6.1112.1517</AssemblyVersion>
     <ApplicationIcon>Assets\app-logo.ico</ApplicationIcon>
   </PropertyGroup>
 
@@ -16,8 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.7" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.7" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="11.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="11.0.0" />
   </ItemGroup>
 
 </Project>
